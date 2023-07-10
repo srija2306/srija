@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width,initial-scale=1.0">
+	<title>RedStore | Contact Us</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+ *{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ }
+ body{
+ font-family: 'Poppins', sans-serif;
+ }
+ .navbar{
+ display:flex;
+ align-items:center;
+ padding:20px;
+ position:sticky;
+ top:0;
+ }
+ nav{
+ flex:1;
+ text-align:right;
+ }
+ nav ul{
+ display:inline-block;
+ list-style-type:none;
+ }
+ nav ul li{
+ display:inline-block;
+ margin-right:20px;
+ }
+ a {
+ color: #555;
+ text-decoration: none;
+ }
+ p{
+ color:#555;
+ }
+ .container{
+ max-width:1300px;
+ margin:auto;
+ padding-left:25px;
+ padding-right:25px;
+ }
+ .row{
+ display:flex;
+ align-items:center;
+ flex-wrap:wrap;
+ justify-content:space-around;
+ }
+ .col-2{
+ flex-basis:50%;
+ min-width:300px;
+ }
+ .col-2 img{
+ max-width:100%;
+ padding:50px 0;
+ }
+ .col-2 h1{
+ font-size:50px;
+ line-height:60px;
+ margin:25px 0;
+ }
+ .btn{
+ display:inline-block;
+ background:lightpink;
+ color:#fff;
+ padding:8px 30px;
+ margin:30px 0;
+ border-radius:30px;
+ transition:background 0.5s;
+ }
+ .btn:hover{
+ background:#563434
+ }
+ .header{
+ background:radial-gradient(#fff,#ffd6d6);
+ }
+ .header .row{
+ margin-top:70px;
+ }
+ .categories{
+ margin:70px 0;
+ }
+ .col-3{
+ flex-basis:30%;
+ min-width:250px;
+ margin-bottom:30px;
+ }
+ .col-3 img{
+ width:100%;
+ }
+ .small-container{
+ max-width:1080px;
+ margin:auto;
+ padding-left:25px;
+ padding-right:25px;
+ }
+ .col-4{
+ flex-basis:25%;
+ padding:10px;
+ min-width:200px;
+ margin-bottom:50px;
+ transition:transform 0.5s;
+ }
+ .col-4 img{
+ width:100%;
+ }
+ .title{
+ text-align:center;
+ margin:0 auto 80px;
+ position:relative;
+ line-height:60px;
+ color::#ff523b;
+ }
+ .title::after{
+ content:'';
+ background:lightpink;
+ width:80px;
+ height:5px;
+ border-radius:5px;
+ position:absolute;
+ bottom:0;
+ left:50%;
+ transform:translateX(-50%);
+ }
+ h4{
+ color:#555;
+ font-weight:normal;
+ }
+ .col-4 p{
+ font-size:14px;
+ }
+ .col-4:hover{
+ transform:translateY(-5px);
+ }
+ .offer{
+ background:radial-gradient(#fff,#ffd6d6);
+ margin-top:80px;
+ padding:30px 0;
+ }
+ .col-2 .offer-img{
+ padding:50px;
+ }
+ small{
+ color:#555;
+ }
+ .testimonial{
+ padding-top:100px;
+ }
+ .testimonial .col-3{
+ text-align:center;
+ padding:40px 20px;
+ box-shadow:0 0 20px 0px rgba(0,0,0,0.1);
+ cursor:pointer;
+ transition:transform 0.5s;
+ }
+ .testimonial .col-3 img{
+ width:50px;
+ margin-top:20px;
+ border-radius:50%;
+ }
+ .testimonial .col-3:hover{
+ transform:translateY(-10px);
+ }
+ .col-3 p{
+ font-size:12px;
+ margin:12px 0;
+ color:#777;
+ }
+ .testimonial .col-3 h3{
+ font-weight:600;
+ color:#555;
+ font-size:16px;
+ }
+ .brands{
+ margin:100px auto;
+ }
+ .col-5{
+ width:160px;
+ }
+ .col-5 img{
+ width:100%;
+ cursor:pointer;
+ filter:grayscale(100%);
+ }
+ .col-5 img:hover{
+ filter:grayscale(0);
+ }
+ .footer{
+ background:#000;
+ color:#8a8a8a;
+ font-size:14px;
+ padding:60px 0 20px;
+ }
+ .footer p{
+ color:#8a8a8a;
+ }
+ .footer h3{
+ color:#fff;
+ margin-bottom:20px;
+ }
+ .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+ min-width:250px;
+ margin-bottom:20px;
+ }
+ .footer-col-1{
+ flex-basis:30%;
+ }
+ .footer-col-2{
+ flex:1;
+ text-align:center;
+ }
+ .footer-col-2 img{
+ width:180px;
+ margin-bottom:20px;
+ }
+ .footer-col-3, .footer-col-4{
+ flex-basis:12%;
+ text-align:center;
+ }
+ ul{
+ list-style-type:none;
+ }
+ .app-logo{
+ margin-top:20px;
+ }
+ .app-logo img{
+ width:140px;
+ }
+ .footer hr{
+ border:none;
+ background:#b5b5b5;
+ height:1px;
+ margin:20px 0;
+ }
+ .copyright{
+ text-align:center;
+ }
+ .menu-icon{
+ width:28px;
+ margin-left:20px;
+ display:none;
+ }
+ @media only screen and (max-width:800px){
+	nav ul{
+		position:absolute;
+		top:70px;
+		left:0;
+		background:#333;
+		width:100%;
+		overflow:hidden;
+		transition:max-height 0.5s;
+	}
+	nav ul li{
+		display:block;
+		margin-right:50px;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	nav ul li a{
+		color:#fff;
+	}
+	.menu-icon{
+		display:block;
+		cursor:pointer;
+	}
+ }
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact form{
+    width: 670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+
+.contact form h1{
+    color: lightpink;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.contact form input{
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid lightpink;
+}
+
+.contact form input::placeholder{
+    color: #ddd;
+}
+
+.contact form #lastName,
+.container form #mobile{
+    margin-left: 20px;
+}
+
+.contact form h4{
+    color: #ddd;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.contact form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid lightpink;
+    color: #333;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+textarea::-webkit-scrollbar{
+    width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: lightpink;
+}
+
+.contact form #button{
+    border: none;
+    background: lightpink;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    width: 100px;
+    padding: 0;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.contact form #button:hover{
+    opacity: 0.7;
+}
+ 
+ 
+</style>
+</head>
+<body>
+	<div class="container">
+	<div class="navbar">
+		<div class="logo">
+			<img src="https://www.dropbox.com/scl/fi/do14xwsa39njkzuyigwws/logo.png?rlkey=9cnnm76u6e0dqud8ex7clwkhx&raw=1" width="125px">
+		</div>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact us.html">Contact Us</a></li>
+				<li><a href="product details.html">Product View</a></li>
+			</ul>
+		</nav>
+		<a href="cart.html"><img src="https://www.dropbox.com/scl/fi/z0zyg3ac2l7elo73oay1y/cart.png?rlkey=y6tam41k0ykw3dbcrk4yypbad&raw=1" width="30px" height="30px"></a>
+		<img src="https://www.dropbox.com/scl/fi/d17ic0co46jtrxgjfe83v/menu.png?rlkey=5ui6rysjo5q2lnx6kjytle60m&raw=1" class="menu-icon" 
+		onclick="menutoggle()">
+	</div>
+    </div>
+	
+	<div class="contact">
+	<div class="container">
+        <form>
+            <h1>Contact Us Form</h1>
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="mobile" placeholder="Mobile" required>
+            <h4>Type Your Message Here...</h4>
+            <textarea required></textarea>
+            <input type="submit" value="Send" id="button">
+        </form>
+    </div>
+	</div>
+	
+		<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3> Download Our App</h3>
+					<p>Download App for Android and ios mobile phone.</p>
+					<div class="app-logo">
+						<img src="https://www.dropbox.com/scl/fi/qne2xkik0mch6sfqkvv4j/play-store.png?rlkey=n05s8xf965uok0a6lc1c29i4d&raw=1">
+						<img src="https://www.dropbox.com/scl/fi/zdphmebhum6ep1hy543ju/app-store.png?rlkey=1e34cxvkiuo2mgmvw9was2xun&raw=1">
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="https://www.dropbox.com/scl/fi/0sgcmejhj8w1a7txndgpn/logo-white.png?rlkey=dv3stuazwwgnwqjn8i959kdb7&raw=1">
+					<p>Our Purpose Is To Sustainably Make the Pleasure and<br> Benefits of Sports Accessible to the Many.</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog Post</li>
+						<li>Return Policy</li>
+						<li>Join Affiliate</li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>YouTube</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright 2023 - Easy Tutorials</p>
+		</div>
+	</div>
+<!----------- js for togglemenu ---------------->
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
+		
+		MenuItems.style.maxHeight = "0px";
+		
+		function menutoggle(){
+		if(MenuItems.style.maxHeight == "0px")
+		{
+			MenuItems.style.maxHeight = "200px";
+		}
+		else{
+			MenuItems.style.maxHeight = "0px";
+		}
+		}
+	</script>
+</body>
+</html>
